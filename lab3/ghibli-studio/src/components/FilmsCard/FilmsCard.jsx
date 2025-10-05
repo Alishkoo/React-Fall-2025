@@ -6,6 +6,7 @@ const FilmsCard = ({ movie }) => {
     <div className="film-card">
       <img src={movie.image} alt={movie.title} className="film-image" />
       <h3 className="film-title">{movie.title}</h3>
+      <h3 className="film-title">{movie.original_title}</h3>
       <p className="film-year">Year: {movie.release_date}</p>
       <p className="film-description">{movie.description}</p>
     </div>
