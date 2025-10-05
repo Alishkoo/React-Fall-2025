@@ -1,0 +1,21 @@
+.films-list {
+  display: flex;
+  flex-wrap: wrap;     
+  gap: 20px;             
+  justify-content: center; 
+  padding: 20px;
+}
+
+.load-button {
+  margin-bottom: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+

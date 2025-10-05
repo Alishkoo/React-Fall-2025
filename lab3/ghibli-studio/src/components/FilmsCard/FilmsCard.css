@@ -1,0 +1,40 @@
+.film-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.film-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.film-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.film-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  color: black;
+}
+
+.film-year {
+  font-size: 14px;
+  color: black;
+  margin: 0 10px 10px 10px;
+}
+
+.film-description {
+  font-size: 14px;
+  color: #333;
+  margin: 0 10px 10px 10px;
+  height: 80px;      
+  text-overflow: ellipsis;
+}

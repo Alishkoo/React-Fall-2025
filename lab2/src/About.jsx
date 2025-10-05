@@ -24,7 +24,7 @@ function About() {
         </div>
       </div>
 
-      <p>Contact us:</p>
+      <p className="contact-us">Contact us:</p>
       <ul>
         <li>Email: meow@gmail.com</li>
         <li>Telegram: @baisholanov</li>

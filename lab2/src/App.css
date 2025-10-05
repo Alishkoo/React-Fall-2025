@@ -68,3 +68,8 @@ html, body, #root, .App {
 .about-container li {
   margin: 4px 0;
 }
+
+.contact-us {
+  font-size: 3rem;
+  font-weight: bold;
+}
