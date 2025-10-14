@@ -19,3 +19,18 @@
   transition: all 0.3s ease;
 }
 
+
+.search-container {
+  margin: 15px 0;
+}
+
+.search-input {
+  padding: 6px;
+  font-size: 16px;
+}
+
+.clear-button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}

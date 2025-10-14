@@ -5,6 +5,7 @@ import "./FilmsList.css";
 
 const FilmsList = () => {
   const [movies, setMovies] = useState([]);
+  const [search, setSearch] = useState("");
 
   const loadMovies = async () => {
     try {
@@ -17,14 +18,37 @@ const FilmsList = () => {
     }
   };
 
+  const filteredMovies = movies.filter((movie) => {
+    return movie.title.toLowerCase().includes(search.toLowerCase());
+  });
+
   return (
     <>
       <button className="load-button" onClick={loadMovies}>
         Load movies of Ghibli studio
       </button>
+
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search by title..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="search-input"
+        />
+        <button onClick={() => setSearch("")} className="clear-button">
+          Clear
+        </button>
+      </div>
+
       <div className="films-list">
-        {movies.length > 0 &&
-          movies.map((movie) => <FilmsCard key={movie.id} movie={movie} />)}
+        {filteredMovies.length > 0 ? (
+          filteredMovies.map((movie) => (
+            <FilmsCard key={movie.id} movie={movie} />
+          ))
+        ) : (
+          <p>No movies found</p>
+        )}
       </div>
     </>
   );
