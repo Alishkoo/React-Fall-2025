@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import FilmsCard from "../FilmsCard/FilmsCard.jsx";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./FilmsList.css";
 
 const FilmsList = () => {
