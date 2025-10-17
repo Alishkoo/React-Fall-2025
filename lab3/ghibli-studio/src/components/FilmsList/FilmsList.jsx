@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FilmsCard from "../FilmsCard/FilmsCard.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./FilmsList.css";
 
 const FilmsList = () => {
@@ -21,6 +21,10 @@ const FilmsList = () => {
   const filteredMovies = movies.filter((movie) => {
     return movie.title.toLowerCase().includes(search.toLowerCase());
   });
+
+  useEffect(() => {
+    loadMovies();
+  }, []);
 
   return (
     <>
