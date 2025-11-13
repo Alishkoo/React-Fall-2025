@@ -1,0 +1,28 @@
+.nav {
+  background: linear-gradient(90deg,#0b1220,#081226);
+  color: #e6eef8;
+  padding: 12px 18px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.25);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav a {
+  color: #9fbff5;
+  text-decoration: none;
+  margin-right: 14px;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+.nav a.active {
+  color: #fff;
+  background: rgba(255,255,255,0.04);
+}
+.brand a {
+  color: #61dafb;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
